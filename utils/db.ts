@@ -119,11 +119,6 @@ export const textGenModels: Model[] = [{
     provider: 'workers-ai',
     type: 'chat'
 }, {
-    id: '@cf/meta/llama-3-8b-instruct',
-    name: 'llama-3-8b-instruct',
-    provider: 'workers-ai',
-    type: 'chat'
-}, {
     id: '@cf/meta/llama-3.1-8b-instruct',
     name: 'llama-3.1-8b-instruct',
     provider: 'workers-ai',
@@ -146,6 +141,11 @@ export const textGenModels: Model[] = [{
 }, {
     id: '@hf/thebloke/deepseek-coder-6.7b-instruct-awq',
     name: 'deepseek-coder-6.7b-instruct-awq',
+    provider: 'workers-ai',
+    type: 'chat'
+}, {
+    id: '@cf/meta/llama-3-8b-instruct',
+    name: 'llama-3-8b-instruct',
     provider: 'workers-ai',
     type: 'chat'
 }]
