@@ -138,6 +138,16 @@ export const textGenModels: Model[] = [{
     name: 'llama-3.1-8b-instruct-fp8',
     provider: 'workers-ai',
     type: 'chat'
+}, {
+    id: '@hf/thebloke/deepseek-coder-6.7b-base-awq',
+    name: 'deepseek-coder-6.7b-base-awq',
+    provider: 'workers-ai',
+    type: 'chat'
+}, {
+    id: '@hf/thebloke/deepseek-coder-6.7b-instruct-awq',
+    name: 'deepseek-coder-6.7b-instruct-awq',
+    provider: 'workers-ai',
+    type: 'chat'
 }]
 
 export const imageGenModels: Model[] = [{
