@@ -73,18 +73,73 @@ export const uniModals: Model[] = [
         name: 'Gemini 2.0 flash',
         provider: 'google',
         type: 'universal'
+    },
+    {
+        id: 'gemini-2.0-pro-exp',
+        name: 'Gemini 2.0 Pro Experimental',
+        provider: 'google',
+        type: 'universal'
+    },
+        {
+        id: 'gemini-2.0-flash-thinking-exp',
+        name: 'Gemini 2.0 Flash Thinking Experimental',
+        provider: 'google',
+        type: 'universal'
+    },
+    {
+        id: 'gemini-2.0-flash-exp',
+        name: 'Gemini 2.0 Flash Experimental',
+        provider: 'google',
+        type: 'universal'
+    },
+    {
+        id: 'gemini-2.0-flash-lite',
+        name: 'Gemini 2.0 Flash-Lite',
+        provider: 'google',
+        type: 'universal'
     }
 ]
 
 export const textGenModels: Model[] = [{
-    id: 'gpt-3.5-turbo',
-    name: 'ChatGPT-3.5-turbo',
+    id: 'gpt-4o',
+    name: 'OpenAI GPT-4o',
+    provider: 'openai',
+    endpoint: 'chat/completions',
+    type: 'chat'
+}, {
+    id: 'gpt-4o-mini',
+    name: 'OpenAI GPT-4o mini',
     provider: 'openai',
     endpoint: 'chat/completions',
     type: 'chat'
 }, {
     id: '@cf/qwen/qwen1.5-14b-chat-awq',
     name: 'qwen1.5-14b-chat-awq',
+    provider: 'workers-ai',
+    type: 'chat'
+}, {
+    id: '@hf/thebloke/deepseek-coder-6.7b-base-awq',
+    name: 'deepseek-coder-6.7b-base-awq',
+    provider: 'workers-ai',
+    type: 'chat'
+}, {
+    id: '@hf/thebloke/deepseek-coder-6.7b-instruct-awq',
+    name: 'deepseek-coder-6.7b-instruct-awq',
+    provider: 'workers-ai',
+    type: 'chat'
+}, {
+    id: '@cf/meta/llama-3.1-8b-instruct',
+    name: 'llama-3.1-8b-instruct',
+    provider: 'workers-ai',
+    type: 'chat'
+}, {
+    id: '@cf/meta/llama-3.1-70b-instruct',
+    name: 'llama-3.1-70b-instruct',
+    provider: 'workers-ai',
+    type: 'chat'
+}, {
+    id: '@cf/meta/llama-3.3-70b-instruct-fp8-fast',
+    name: 'llama-3.3-70b-instruct-fp8-fast',
     provider: 'workers-ai',
     type: 'chat'
 }, {
@@ -112,19 +167,9 @@ export const textGenModels: Model[] = [{
     name: 'starling-lm-7b-beta',
     provider: 'workers-ai',
     type: 'chat'
-}, {
-    id: '@cf/meta/llama-3-8b-instruct',
-    name: 'llama-3-8b-instruct',
-    provider: 'workers-ai',
-    type: 'chat'
 }]
 
 export const imageGenModels: Model[] = [{
-    id: '@cf/lykon/dreamshaper-8-lcm',
-    name: 'dreamshaper-8-lcm',
-    provider: 'workers-ai-image',
-    type: 'text-to-image'
-}, {
     id: '@cf/stabilityai/stable-diffusion-xl-base-1.0',
     name: 'stable-diffusion-xl-base-1.0',
     provider: 'workers-ai-image',
@@ -132,6 +177,16 @@ export const imageGenModels: Model[] = [{
 }, {
     id: '@cf/bytedance/stable-diffusion-xl-lightning',
     name: 'stable-diffusion-xl-lightning',
+    provider: 'workers-ai-image',
+    type: 'text-to-image'
+}, {
+    id: '@cf/black-forest-labs/flux-1-schnell',
+    name: 'flux-1-schnell',
+    provider: 'workers-ai-image',
+    type: 'text-to-image'
+}, {
+    id: '@cf/lykon/dreamshaper-8-lcm',
+    name: 'dreamshaper-8-lcm',
     provider: 'workers-ai-image',
     type: 'text-to-image'
 }]
